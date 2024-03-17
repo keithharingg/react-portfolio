@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto; /* Center the container */
+  overflow: hidden; /* Clear floats */
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  width: 100%;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}

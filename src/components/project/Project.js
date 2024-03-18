@@ -1,13 +1,14 @@
 import React from 'react';
 import './style.css';
+import { Link } from 'react-router-dom';
 
-const Project = ({ title, img, skills }) => {
+const Project = ({ title, img }) => {
   return (
     <li className="project">
-      <a href="./project-page.html">
+      <Link to="/project">
         <img src={img} alt="Project img" className="project__img" />
         <h3 className="project__title">{title}</h3>
-      </a>
+      </Link>
     </li>
   );
 };

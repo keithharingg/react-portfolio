@@ -10,7 +10,7 @@ const Projects = () => {
           <h2 className="title-1">Projects</h2>
           <ul className="projects">
             {projects.map((pr, index) => (
-              <Project key={index} title={pr.title} img={pr.image} skills={pr.skills} />
+              <Project id={index} key={index} title={pr.title} img={pr.image} skills={pr.skills} />
             ))}
           </ul>
         </div>

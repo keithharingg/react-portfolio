@@ -22,7 +22,7 @@ export const projects = [
     skills: ['HTML', 'CSS', 'JavaScript', 'React'],
     image: image1,
     imageBig: image1Big,
-    gitHubLink: '',
+    gitHubLink: 'https://github.com/',
   },
   {
     title: 'Video service',

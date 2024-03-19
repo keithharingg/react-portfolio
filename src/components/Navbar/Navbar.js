@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 import { Link, NavLink } from 'react-router-dom';
-import BtnDarkMode from '../BtnDarkMode/BtnDarkMode';
+import BtnDarkMode from '../btnDarkMode/btnDarkMode';
 
 const Navbar = () => {
   const activeLink = 'nav-list__link nav-list__link--active';
@@ -14,9 +14,7 @@ const Navbar = () => {
           <Link to="/" className="logo">
             <strong>Freelancer</strong> portfolio
           </Link>
-
           <BtnDarkMode />
-
           <ul className="nav-list">
             <li className="nav-list__item">
               <NavLink to="/" className={({ isActive }) => (isActive ? activeLink : normLink)}>

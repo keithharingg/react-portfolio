@@ -23,6 +23,13 @@ const BtnDarkMode = () => {
       btnRef.current.classList.remove('dark-mode-btn--active');
     }
   }, [darkMode]);
+
+  useEffect(() => {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+      const newColorScheme = event.matches ? 'dark' : 'light';
+      setDarkMode(newColorScheme);
+    });
+  }, []);
   return (
     <button ref={btnRef} className="dark-mode-btn" onClick={toggleDarkMode}>
       <img src={sun} alt="Light mode" className="dark-mode-btn__icon" />

@@ -1,57 +1,52 @@
-import image1 from '../img/projects/01.jpg';
-import image1Big from '../img/projects/01-big.jpg';
+import image1 from '../img/projects/01.png';
+import image1Big from '../img/projects/01-big.png';
 
-import image2 from '../img/projects/02.jpg';
-import image2Big from '../img/projects/02-big.jpg';
+import image2 from '../img/projects/02.png';
+import image2Big from '../img/projects/02-big.png';
 
-import image3 from '../img/projects/03.jpg';
-import image3Big from '../img/projects/03-big.jpg';
+import image3 from '../img/projects/03.png';
+import image3Big from '../img/projects/03-big.png';
 
-import image4 from '../img/projects/04.jpg';
-import image4Big from '../img/projects/04-big.jpg';
+import image4 from '../img/projects/04.png';
+import image4Big from '../img/projects/04-big.png';
 
-import image5 from '../img/projects/05.jpg';
-import image5Big from '../img/projects/05-big.jpg';
-
-import image6 from '../img/projects/06.jpg';
-import image6Big from '../img/projects/06-big.jpg';
+import image5 from '../img/projects/05.png';
+import image5Big from '../img/projects/05-big.png';
 
 export const projects = [
   {
-    title: 'Gaming streaming portal',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+    title: 'React Pizza',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
     image: image1,
     imageBig: image1Big,
-    gitHubLink: 'https://github.com/',
+    gitHubLink: 'https://github.com/keithharingg/react-pizza',
   },
   {
-    title: 'Video service',
-    skills: ['React', 'Redux', 'Node.js', 'MongoDB'],
+    title: 'Library App',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
     image: image2,
     imageBig: image2Big,
+    gitHubLink: 'https://github.com/keithharingg/book-library-app',
   },
   {
-    title: 'Video portal',
-    skills: ['React Native', 'Firebase', 'Redux', 'Expo'],
+    title: 'React Sneakers',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
     image: image3,
     imageBig: image3Big,
+    gitHubLink: 'https://github.com/keithharingg/react-sneakers-shop',
   },
   {
-    title: 'Dating app',
-    skills: ['HTML', 'CSS', 'JavaScript', 'Express', 'MongoDB'],
+    title: 'Tic-Tac-Toe',
+    skills: ['HTML', 'JavaScript', 'Next.js', 'TailwindCSS'],
     image: image4,
     imageBig: image4Big,
+    gitHubLink: 'https://github.com/keithharingg/tic-tac-toe.v2',
   },
   {
-    title: 'Landing',
-    skills: ['React', 'Bootstrap', 'Chart.js'],
+    title: 'Landing Iceland',
+    skills: ['HTML', 'CSS'],
     image: image5,
     imageBig: image5Big,
-  },
-  {
-    title: 'Gaming community',
-    skills: ['React', 'PHP#', 'MySQL'],
-    image: image6,
-    imageBig: image6Big,
+    gitHubLink: 'https://elated-shockley-a9e4bd.netlify.app/#',
   },
 ];

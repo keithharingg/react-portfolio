@@ -1,8 +1,15 @@
 .project {
+  margin: 10px;
   max-width: 370px;
   background-color: var(--project-card-bg);
   box-shadow: var(--box-shadow);
   border-radius: 10px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.project:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transform: translate(5px, -5px);
 }
 
 .project__img {

@@ -15,7 +15,7 @@ const Project = () => {
           <div className="project-details__desc">
             <p>Skills: {project.skills.join(', ')}</p>
           </div>
-          {project.gitHubLink && <GitHubBtn link="https://github.com/" />}
+          {project.gitHubLink && <GitHubBtn link={project.gitHubLink} />}
         </div>
       </div>
     </main>

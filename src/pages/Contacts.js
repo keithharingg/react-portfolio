@@ -1,34 +1,43 @@
 import React from 'react';
+import ContentLayout from '../components/ContentLayout/ContentLayout';
 
 const Contacts = () => {
   return (
-    <div>
-      <main className="section">
-        <div className="container">
-          <h1 className="title-1">Contacts</h1>
-
-          <ul className="content-list">
-            <li className="content-list__item">
-              <h2 className="title-2">Location</h2>
-              <p>Aarhus, Denmark</p>
-            </li>
-            <li className="content-list__item">
-              <h2 className="title-2">Telegram / WhatsApp</h2>
-              <p>
-                <a href="tel:+4571362814">+45 713-62-814</a>
-              </p>
-            </li>
-            <li className="content-list__item">
-              <h2 className="title-2">Email</h2>
-              <p>
-                <a href="mailto:tnestere@gmail.com">tnestere@gmail.com</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-      </main>
-    </div>
+    <>
+      <ContentLayout>
+        <ul className="content-list">
+          <li className="content-list__item">
+            <h2 className="title-2">Location</h2>
+            <p>Aarhus, Denmark</p>
+          </li>
+          <ContactLink linkText="+45 71 36 28 14" link="tel:+4571362814">
+            Contact phone
+          </ContactLink>
+          <ContactLink
+            linkText="Send a  message..."
+            link="https://api.whatsapp.com/send?phone=380996706498">
+            WhatsApp
+          </ContactLink>
+          <ContactLink linkText="Send an email..." link="mailto:taras.react.dev@gmail.com">
+            Email
+          </ContactLink>
+        </ul>
+      </ContentLayout>
+    </>
   );
 };
 
 export default Contacts;
+
+const ContactLink = ({ children, link, linkText }) => {
+  return (
+    <li className="content-list__item">
+      <h2 className="title-2">{children}</h2>
+      <p>
+        <a target="_blank" rel="noreferrer" href={link}>
+          {linkText}
+        </a>
+      </p>
+    </li>
+  );
+};

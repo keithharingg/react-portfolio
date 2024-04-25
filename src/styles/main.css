@@ -6,8 +6,8 @@
   --blackpure: #000;
   --black: #171718;
   --black-border: #26292d;
-  --white: #fff;
-  --purple: #5c62ec;
+  --white: #f2f2f2;
+  --purple: #755fe2;
 
   /* Nav */
   --nav-bg: var(--black);
@@ -97,7 +97,7 @@ body {
 
 .title-2 {
   margin-bottom: 20px;
-
+  color: var(--title-1);
   font-size: 40px;
   font-weight: 700;
   line-height: 1.3;
@@ -141,7 +141,7 @@ body {
 
   border-radius: 5px;
   border: 1px solid #000;
-  background-color: #fff;
+  background-color: #f2f2f2;
   color: #000;
 
   transition: opacity 0.2s ease-in;

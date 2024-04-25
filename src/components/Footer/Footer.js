@@ -12,32 +12,16 @@ const Footer = () => {
       <div className="container">
         <div className="footer__wrapper">
           <ul className="social">
-            <li className="social__item">
-              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/myhalych/">
-                <img src={instagram} alt="Link" />
-              </a>
-            </li>
-            <li className="social__item">
-              <a target="_blank" rel="noreferrer" href="#!">
-                <img src={twitter} alt="Link" />
-              </a>
-            </li>
-            <li className="social__item">
-              <a target="_blank" rel="noreferrer" href="https://github.com/keithharingg">
-                <img src={github} alt="Link" />
-              </a>
-            </li>
-            <li className="social__item">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.linkedin.com/in/taras-nesterenko-207081236/">
-                <img src={linkedin} alt="Link" />
-              </a>
-            </li>
+            <SocialIconLink link="https://www.instagram.com/myhalych/" img={instagram} />
+            <SocialIconLink link="#!" img={twitter} />
+            <SocialIconLink link="https://github.com/keithharingg" img={github} />
+            <SocialIconLink
+              link="https://www.linkedin.com/in/taras-nesterenko-207081236/"
+              img={linkedin}
+            />
           </ul>
           <div className="copyright">
-            <p>© 2022 frontend-dev.com</p>
+            <p>© 2023 keithharingg</p>
           </div>
         </div>
       </div>
@@ -46,3 +30,15 @@ const Footer = () => {
 };
 
 export default Footer;
+
+const SocialIconLink = ({ link, img }) => {
+  return (
+    <>
+      <li className="social__item">
+        <a target="_blank" rel="noreferrer" href={link}>
+          <img src={img} alt="Link" />
+        </a>
+      </li>
+    </>
+  );
+};

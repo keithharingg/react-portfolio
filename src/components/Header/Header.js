@@ -12,9 +12,13 @@ const Header = () => {
           <br />a frontend developer
         </h1>
         <div className="header__text">
-          <p>with passion for learning and creating.</p>
+          <p>with passion for learning and coding.</p>
         </div>
-        <a href="#!" className="btn">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://drive.google.com/file/d/1Y4tCQGHm12ofwDRo_q_uCWKaLLPGvCfl/view?usp=sharing"
+          className="btn">
           Download CV
         </a>
       </div>

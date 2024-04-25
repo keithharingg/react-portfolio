@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="container">
         <div className="nav-row">
           <Link to="/" className="logo">
-            <strong>Freelancer</strong> portfolio
+            <strong>Website</strong> portfolio
           </Link>
           <BtnDarkMode />
           <ul className="nav-list">
